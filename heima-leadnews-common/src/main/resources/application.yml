@@ -1,0 +1,13 @@
+#全局端口定义server:
+# 全局字符集设置
+spring:
+  aop:
+    proxy-target-class: true  #表示使用CGLIB来实现AOP的代理类，默认使用JDK动态代理
+server:
+  tomcat:
+    uri-encoding: utf-8  #表示Tomcat服务器使用UTF-8编码来解析URI
+  servlet:
+    encoding:
+      enabled: true
+      force: true
+      charset: utf-8
